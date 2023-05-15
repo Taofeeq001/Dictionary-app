@@ -1,0 +1,87 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20.7rem;
+    background: url(../images/image1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+form{
+    display: flex;
+    width: 65%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    backdrop-filter: blur(260px);    
+}
+form input{
+    width: 90%;
+    padding: 25px;
+    border: 1px solid black;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    background-color: transparent;
+    
+}
+form button{
+    padding: 0 40px;
+    border: none;
+    background-color: aqua;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-weight: 600;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.display .word{
+    margin-top: 3rem;
+    color: white;
+}
+.Meaning, .examples{
+    margin-top: 30px;
+    border: 1px solid grey;
+    width: 65%;
+    height: 20vh;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+    backdrop-filter: blur(10px);
+    line-height: 30px;
+    border-bottom-left-radius: 20px;
+    overflow: scroll;   
+    color:white;
+    border-left: 4px solid aqua;
+}
+.examples{
+    margin-bottom: 40px;
+}
+@media screen and (max-width:950px) {
+    .body{
+        width: 100%;
+        flex-direction: column;
+        padding-left: 0;
+        padding: 10px;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        padding: 10px;
+        font-size: 17px;
+    }
+    .Meaning, .examples{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 12px;
+        backdrop-filter: blur(8px);
+        line-height: normal;
+    }
+}

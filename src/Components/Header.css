@@ -1,0 +1,64 @@
+.family{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+}
+.dictionary{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.topLeft h1{
+    font-size: 45px;
+}
+.topRight{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.topRight button{
+    background-color: blueviolet;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width:950px) {
+   
+    .family{
+        align-items: center;
+        justify-content: center;
+    }
+    .topLeft{
+        width: 100%;
+        margin-bottom: 25px;
+    }  
+    .topLeft h1{
+        font-size: 25px;
+    }
+    .topLeft p{
+        font-size: 12px;
+    }
+    .dictionary{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mobile{
+        display: block;
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .mobile button{
+        padding: 10px;
+    }
+}
