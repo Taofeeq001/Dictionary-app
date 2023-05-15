@@ -44,11 +44,12 @@ const Body =()=>{
                 <div className="word">
                     {
                         diction && (
-                            diction.map((diction, index)=>(
-                                <div key={index}>
-                                    <h1> Word: {diction.word}</h1>
-                                </div>
-                            ))
+                            // diction.map((diction, index)=>(
+                            //     <div key={index}>
+                            //         <h1> Word: {diction[0].word}</h1>
+                            //     </div>
+                            // ))
+                            <h1>Word: {diction[0].word}</h1>
                         )
                     }
                 </div>
